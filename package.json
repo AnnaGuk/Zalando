@@ -1,0 +1,16 @@
+{
+  "name": "scss",
+  "version": "1.0.0",
+  "description": "zalando",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sass --watch ./src/main.scss ./dist/bundle.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/AnnaGuk/Zalando.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/AnnaGuk/Zalando#readme"
+}

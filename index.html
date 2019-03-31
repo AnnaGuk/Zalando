@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="dist/bundle.css">
+  <script src="src/app.js" defer async></script>
+  <title>Odzież i buty dziecięce w Zalando (copy)</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__menu--top">
+      <span class="header__menu--top__element">
+        <a href="https://www.zalando.pl/faq/">Pomoc i kontakt</a>
+      </span>
+      <span class="header__menu--top__element" title="Przesyłka i zwrot w Zalando są zawsze bezpłatne. Bez minimalnej kwoty zamówienia, płacisz tylko za swoje produkty!">
+        <b>przesyłka i zwrot gratis</b>
+      </span>
+      <span class="header__menu--top__element" title="Satysfakcja klienta jest dla nas najwazniejsza. Nie jestes zadowolony ze swojego zamówienia? W ciagu 100 dni mozesz zwrócic nam nieuzywane produkty.">
+        <b>100-dniowe prawo zwrotu</b>
+      </span>
+    </div>
+
+    <div class="header__menu--middle">
+      <nav class="header__menu--middle__nav">
+        <a class="menumiddle__nav--item" href="https://www.zalando.pl/kobiety-home/">Kobiety</a>
+        <a class="menumiddle__nav--item" href="https://www.zalando.pl/mezczyzni-home/">Mężczyźni</a>
+        <a class="menumiddle__nav--item" href="https://www.zalando.pl/dzieci-home/">Dzieci</a>
+      </nav>
+      <div class="header__menu--middle__logo">
+        <a href="https://www.zalando.pl/dzieci-home/">
+          <img class="menumiddle__logo--item" src="src/images/logo_default.svg" alt="Zalando">
+        </a>
+      </div>
+      <nav class="header__menu--middle__nav--side">
+        <span class="navside__button">
+          <img src="src/images/sign-in.PNG" alt="sign-in">
+          <a class="navside__item" href="https://www.zalando.pl/login/?target=https%3A%2F%2Fwww.zalando.pl%2Fmyaccount%2F">Moje
+            konto</a>
+        </span>
+        <span class="navside__button">
+          <img src="src/images/list.PNG" alt="list">
+          <a class="navside__item" href="https://www.zalando.pl/wishlist/">Lista życzeń</a>
+        </span>
+        <span class="navside__button">
+          <img src="src/images/bucket.PNG" alt="busket">
+          <a class="navside__item" href="https://www.zalando.pl/cart/">Koszyk</a>
+        </span>
+      </nav>
+    </div>
+
+    <div class="header__menu--bottom">
+      <button id="hmbg" class="btn__hamburger">
+        <img src="src/images/hamburger.png" alt="Menu" style="width:35px; height:35px; padding: 0;">
+      </button>
+
+      <nav id="mbl" class="header__menu--bottom__nav active">
+        <a class="menubottom__item active" href="https://www.zalando.pl/odziez-dziecieca/">Odzież</a>
+        <a class="menubottom__item" href="https://www.zalando.pl/obuwie-dzieciece/">Obuwie</a>
+        <a class="menubottom__item" href="https://www.zalando.pl/sport-dzieci/">Sport</a>
+        <a class="menubottom__item" href="https://www.zalando.pl/dzieci-akcesoria/">Akcesoria</a>
+        <a class="menubottom__item" href="https://www.zalando.pl/bielizna-dziecieca/">Bielizna</a>
+        <a class="menubottom__item" href="https://www.zalando.pl/premium-dzieci/">Premium</a>
+        <a class="menubottom__item" href="https://www.zalando.pl/marki/dzieci/">Marki</a>
+        <a class="menubottom__item-diff" id="promo" href="https://www.zalando.pl/dzieci-promocja/">Promocje</a>
+      </nav>
+      <div class="header__search">
+        <input class="header__searchfield" type="text" placeholder="Search">
+        <img src="src/images/search-icon.png" alt="" role="presentation">
+      </div>
+    </div>
+  </header>
+
+  <div class="promo sales">
+    <div class="sales__box">
+      <p class="sales__box--hour">Ostatnie 24 godziny</p>
+      <h1 class="sales__box--title">SEZONOWE OBNIŻKI DO -50%</h1>
+    </div>
+    <a class="sales__link" href="https://www.zalando.pl/dzieci-promocja/?wmc=OSM_ZMS_MSS_42_18_PL">Skorzystaj teraz</a>
+  </div>
+
+  <div class="promo jackets"> 
+    <img src="src/images/jackets-mobile.png" alt="background in mobile app" class="jackets__mobilebackground">
+    <div class="jackets__text">
+      <h2 class="jackets__title--upper">Modne kurtki dziecięce</h2>
+      <h2 class="jackets__title--lower">Gorący styl na chłodne miesiące!</h2>
+      <a href="https://www.zalando.pl/lp-cam-ea751d7802586bafa4c51e321da9ecb2/dzieci/?wmc=OSM_GC-AW18_0378_9_PL" class="jackets__link">Zobacz
+        więcej</a>
+    </div>
+  </div> 
+
+  <section class="slider__container">
+    <div class="slider__slide" id="content">
+      <div class="slider__slide--small">
+        <img src="https://mosaic03.ztat.net/vgs/media/pdp-reco-2x/OV/02/3B/02/9O/11/OV023B029-O11@7.jpg" alt="Leggins">
+        <div class="slider__slide--text">
+          <h4>41,65 zł</h4>
+          <a class="slider__slide--article" href="https://www.zalando.pl/ovs-legginsy-sierra-ov023b029-o11.html">Legginsy</a>
+        </div>
+      </div>
+
+      <div class="slider__slide--small">
+        <img src="https://mosaic03.ztat.net/vgs/media/packshot/pdp-reco-2x/4B/E2/4K/03/WQ/11/4BE24K03W-Q11@2.jpg" alt="blouse">
+        <div class="slider__slide--text">
+          <h4> 89,1 zł</h4>
+          <a class="slider__slide--article" href="https://www.zalando.pl/benetton-jacket-hood-bluza-rozpinana-4be24k03w-q11.html">Bluza
+            rozpinana</a>
+        </div>
+      </div>
+
+      <div class="slider__slide--small">
+        <img src="https://mosaic03.ztat.net/vgs/media/pdp-reco-2x/F5/72/4G/02/IC/11/F5724G02I-C11@2.jpg" alt="blouse, long sleeves">
+        <div class="slider__slide--text">
+          <h4>74 zł</h4>
+          <a class="slider__slide--article" href="https://www.zalando.pl/friboo-bluzka-z-dlugim-rekawem-grey-marl-f5724g02i-c11.html">Bluzka
+            z długim rękawem</a>
+        </div>
+      </div>
+
+      <div class="slider__slide--small">
+        <img src="https://mosaic03.ztat.net/vgs/media/packshot/pdp-reco-2x/M8/52/3E/01/EQ/11/M8523E01E-Q11@6.jpg" alt="skirt, mini">
+        <div class="slider__slide--text">
+          <h4>249 zł</h4>
+          <a class="slider__slide--article" href="https://www.zalando.pl/molo-baji-spodnica-mini-black-m8523e01e-q11.html">Spódnica
+            mini</a>
+        </div>
+      </div>
+
+      <div class="slider__slide--small">
+        <img src="https://mosaic03.ztat.net/vgs/media/pdp-reco-2x/F5/72/3F/02/JK/11/F5723F02J-K11@11.jpg" alt="cocktail dress">
+        <div class="slider__slide--text">
+          <h4>169 zł</h4>
+          <a class="slider__slide--article" href="https://www.zalando.pl/friboo-sukienka-koktajlowa-navy-blazer-f5723f02j-k11.html">Sukienka
+            koktajlowa</a>
+        </div>
+      </div>
+
+      <div class="slider__slide--small">
+        <img src="https://mosaic03.ztat.net/vgs/media/packshot/pdp-reco-2x/OU/52/3D/00/7Q/11/OU523D007-Q11@6.jpg" alt="jersey dress">
+        <div class="slider__slide--text">
+          <h4>103,20 zł</h4>
+          <a class="slider__slide--article" href="https://www.zalando.pl/outfit-kids-girls-ditsy-dress-sukienka-z-dzerseju-black-ou523d007-q11.html">Sukienka
+            z dżerseju</a>
+        </div>
+      </div>
+
+      <div class="slider__slide--small">
+        <img src="https://mosaic03.ztat.net/vgs/media/packshot/pdp-reco-2x/BA/S8/3D/00/8Q/11/BAS83D008-Q11@6.jpg" alt="stockings">
+        <div class="slider__slide--text">
+          <h4>109 zł</h4>
+          <a class="slider__slide--article" href="https://www.zalando.pl/bang-bang-copenhagen-swan-love-rajstopy-blackwhite-bas83d008-q11.html">Rajstopy</a>
+        </div>
+      </div>
+
+      <div class="slider__slide--small">
+        <img src="https://mosaic03.ztat.net/vgs/media/packshot/pdp-reco-2x/M8/52/3K/02/6B/11/M8523K026-B11@8.jpg" alt="poncho">
+        <div class="slider__slide--text">
+          <h4>299 zł</h4>
+          <a class="slider__slide--article" href="https://www.zalando.pl/molo-maris-ponczo-grey-m8523k026-b11.html">Ponczo</a>
+        </div>
+      </div>
+
+      <div class="slider__slide--small">
+        <img src="https://mosaic03.ztat.net/vgs/media/packshot/pdp-reco-2x/FI/P2/3E/00/1O/11/FIP23E001-O11@2.jpg" alt="mini skirt">
+        <div class="slide--text">
+          <h4>359 zł</h4>
+          <a class="slider__slide--article" href="https://www.zalando.pl/finger-in-the-nose-annix-stripe-spodnica-mini-bronze-fip23e001-o11.html">Spódnica
+            mini</a>
+        </div>
+      </div>
+
+      <div class="slider__slide--small">
+        <img src="https://mosaic03.ztat.net/vgs/media/packshot/pdp-reco-2x/B8/94/3N/01/SK/11/B8943N01S-K11@2.jpg" alt="backpack">
+        <div class="slide--text">
+          <h4>209 zł</h4>
+          <a class="slider__slide--article" href="https://www.zalando.pl/barts-dingo-backpack-plecak-b8943n01s-k11.html">Plecak</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="slider__nav">
+      <button class="slider__nav--button" id="button--left"></button>
+      <button class="slider__nav--button" id="button--right"></button>
+    </div>
+  </section>
+
+  <section class="categories__container">
+    <div class="categories__text">
+      <h2 class="categories__text--firsttitle">Wybierz kategorię</h2>
+      <h2 class="categories__text--secondtitle">Dla kogo robisz zakupy?</h2>
+    </div>
+    <div class="categories__images">
+      <div href="https://www.zalando.pl/dzieci/?gender=1&amp;wmc=OSM_GC-AW16_boys_PL" class="categories__images--item">
+        <img src="https://mosaic03.ztat.net/grv/halo/7E2/29/119/ec612150-cdd1-4402-9da7-b35773a493d7.jpg" alt="boys">
+        <a class="categories__images--title" href="https://www.zalando.pl/dzieci/?gender=1&amp;wmc=OSM_GC-AW16_boys_PL" title="Chłopcy">Chłopcy</a>
+      </div>
+      <div href="https://www.zalando.pl/dzieci/?gender=2&amp;wmc=OSM_GC-AW26_girls_PL" class="categories__images--item">
+        <img src="https://mosaic03.ztat.net/grv/halo/7E2/29/119/f1d5be06-d5ae-4568-8937-2d4a690695b0.jpg"
+          alt="girls">
+        <a class="categories__images--title" href="https://www.zalando.pl/dzieci/?gender=2&amp;wmc=OSM_GC-AW26_girls_PL" title="Dziewczynki">Dziewczynki</a>
+      </div>
+      <div href="https://www.zalando.pl/dzieci/?gender=4&amp;wmc=OSM_GC-AW16_baby_PL" class="categories__images--item">
+        <img src="https://mosaic03.ztat.net/grv/halo/7E2/29/119/164a5b1a-ced1-4a9d-a615-4b6a4debc993.jpg" alt="Niemowlęta">
+        <a class="categories__images--title" href="https://www.zalando.pl/dzieci/?gender=4&amp;wmc=OSM_GC-AW16_baby_PL" title="Niemowlęta">Niemowlęta</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer__container">
+    <h2 class="footer__title">Moda dziecięca, czyli jak ubrać swoją pociechę!</h2>
+    <p class="footer__text">Jedni mówią, dziecko powinno wyglądać jak dziecko. To znaczy chyba to, że w dziecięcej
+      szafie nie może zabraknąć kolorowych aplikacji, bajkowych motywów, jaskrawych kolorów i fasonów tak typowych dla
+      maluchów. Inni lubią widzieć swoją mini kopię, wybierają więc dla swoich dzieci takie zestawy, które dość
+      dosłownie wzorowane są na dorosłych ubraniach. <strong>Moda dziecięca łączy komfort
+        noszenia, jakość materiałów i duży wybór.</strong> I tak jak dorośli czasem dla urody cierpią katusze w za
+      małych butach czy za ciasnych spodniach, tak dzieci nie zrezygnują tak łatwo z nieskrępowanych ruchów i wygody. W
+      końcu to moda jest dla dzieci, a nie dzieci dla mody, prawda? Jak często robisz zakupy dla swojego dziecka? Moda
+      dziecięca wciąga tak, że trudno oderwać się od małych t-shirtów, <a href="https://www.zalando.pl/dzieci-szorty/">szortów
+        dziecięcych</a> czy marynarek. Dobra rada dla rodziców, którzy modę dla dzieci traktują praktycznie – zakupy
+      można zacząć od zaznaczenia ulubionego koloru. Wtedy łatwo znaleźć ubrania, które będą do siebie pasowały. Jeśli
+      baza już jest, czyli ubrania, które posłużą na więcej niż kilka spacerów, wtedy można dobrać dodatki – <a href="https://www.zalando.pl/dzieci-chusty-szaliki/">szaliki
+        i chusty dla dzieci</a>, szelki, dziecięce czapki i kapelusze, no i najważniejsze – buty dziecięce.</p>
+    <h2 class="footer__title">Moda dla dzieci to kolory!</h2>
+    <p class="footer__text">Wcale nie trzeba działać zgodnie ze stereotypami – dziewczynki wyglądają pięknie w <a href="https://www.zalando.pl/jasnoniebieski/">jasnoniebieskim</a>,
+      a chłopcu równie dobrze można dobrać pastelowe akcesoria. Nie trzeba nawet zbyt dosłownie trzymać się kwestii
+      zestawień kolorystycznych, im bardziej zwariowane połączenia, tym lepiej! Więc jeśli jeszcze nie masz
+      skompletowanej szafy dla swojego dziecka na nowy sezon, zobacz, ile zestawów możesz znaleźć na Zalando. Prawda,
+      że ogromny wybór?</p>
+    <h2 class="footer__title">Moda dziecięca musi być komfortowa!</h2>
+    <p class="footer__text">Wybieraj według klucza – kolor, rozmiar, marka, a nawet tkanina. Moda dla dzieci zaczyna
+      się właśnie od tego! Od kilku sezonów można zauważyć jedną prawidłowość – kolor jest bazą, a tym, co dodaje
+      ubraniom mocy, to wzór, nadruk na materiale, zawsze bardzo charakterystyczny, często są to zwierzęta, albo owoce.
+      To jest modne i to się podoba dzieciom. A co jest wygodne? Moda dziecięca musi być komfortowa – zawsze, ponieważ
+      dzieci są zawsze w ruchu. Gdy uczą się chodzić, gdy zaczynają biegać, gdy bawią się z innymi dziećmi. To dlatego
+      spodnie dla dzieci często mają obniżony krok, są luźne. Bluzki natomiast są z przewiewnych materiałów, a buty
+      dobrze trzymają się stopy. Moda dziecięca to z jednej strony rygorystyczne trzymanie się jakości i formy, która
+      wspiera rozwój dziecka, a z drugiej – nieograniczona wolność doboru kolorów, wyraz ekspresji i temperamentu
+      każdego dziecka. <strong>Moda dziecięca to zabawa.</strong> Nie ma żadnego dress code,
+      którego trzeba się trzymać. Wystarczy odrobina wyobraźni i gotowe – dziecko ubrane wygodnie i zgodnie z
+      najnowszymi trendami w modzie.</p>
+    </footer>
+
+  <div class="links__container">
+    <h3 class="links__title">Popularne marki w działach Odzież i Obuwie dla Dzieci</h3>
+    <div class="links__box">
+      <a class="links__box--title" href="https://www.zalando.pl/abercrombie-and-fitch/" title="Abercrombie&Fitch w Zalando"
+        target="" type="default" rel="">Abercrombie&Fich</a>
+      <a class="links__box--title" href="https://www.zalando.pl/crocs/" title="Crocs w Zalando" target=""
+        type="default" rel="">Crocs</a>
+      <a class="links__box--title" href="https://www.zalando.pl/geox/" title="Geox w Zalando" target="" type="default"
+        rel="">Geox</a>
+      <a class="links__box--title" href="https://www.zalando.pl/mothercare/" title="Mothercare w Zalando"
+        target="" type="default" rel="">Mothercare</a>
+      <a class="links__box--title" href="https://www.zalando.pl/ovs/" title="OVS w Zalando" target="" type="default"
+        rel="">OVS</a>
+      <a class="links__box--title" href="https://www.zalando.pl/star-wars/" title="Star Wars w Zalando"
+        target="" type="default" rel="">Star Wars</a>
+      <a class="links__box--title" href="https://www.zalando.pl/adidas/" title="adidas w Zalando" target=""
+        type="default" rel="">adidas</a>
+      <a class="links__box--title" href="https://www.zalando.pl/ecco/" title="Ecco w Zalando" target="" type="default"
+        rel="">Ecco</a>
+      <a class="links__box--title" href="https://www.zalando.pl/guess/" title="Guess w Zalando" target=""
+        type="default" rel="">Guess</a>
+      <a class="links__box--title" href="https://www.zalando.pl/name-it/" title="Name it w Zalando" target=""
+        type="default" rel="">Name it</a>
+      <a class="links__box--title" href="https://www.zalando.pl/pepe-jeans/" title="Pepe Jeans w Zalando"
+        target="" type="default" rel="">Pepe Jeans</a>
+      <a class="links__box--title" href="https://www.zalando.pl/timberland/" title="Timberland w Zalando"
+        target="" type="default" rel="">Timberland</a>
+      <a class="links__box--title" href="https://www.zalando.pl/benetton/" title="Benetton w Zalando" target=""
+        type="default" rel="">Benetton </a>
+      <a class="links__box--title" href="https://www.zalando.pl/esprit/" title="Esprit w Zalando" target=""
+        type="default" rel="">Esprit</a>
+      <a class="links__box--title" href="https://www.zalando.pl/lacoste/" title="Lacoste w Zalando" target=""
+        type="default" rel="">Lacoste</a>
+      <a class="links__box--title" href="https://www.zalando.pl/new-balance/" title="New Balance w Zalando"
+        target="" type="default" rel="">New Balance </a>
+      <a class="links__box--title" href="https://www.zalando.pl/puma/" title="Puma w Zalando" target="" type="default"
+        rel="">Puma</a>
+      <a class="links__box--title" href="https://www.zalando.pl/tom-tailor/" title="Tom Tailor w Zalando"
+        target="" type="default" rel="">Tom Tailor</a>
+      <a class="links__box--title" href="https://www.zalando.pl/carters/" title="Carter's w Zalando" target=""
+        type="default" rel="">Carter's</a>
+      <a class="links__box--title" href="https://www.zalando.pl/friboo/" title="Friboo w Zalando" target=""
+        type="default" rel="">Friboo</a>
+    </div>
+  </div>
+
+  <footer class="footer__navigation">
+    <section class="footer__navigation--section">
+      <h4 class="footer__navigation--title">POMOC</h4>
+      <div class="footer__navitem">
+        <a class="footer__navitem--link" href="/faq/" type="text_link">Wszystkie tematy</a>
+        <a class="footer__navitem--link" href="/faq/Wysy%c5%82ka-i-dostawa/68684625/Czas-dostarczenia-przesy%c5%82ki.htm"
+          type="text_link">Czas dostarczenia przesyłki</a>
+        <a class="footer__navitem--link" href="/faq/Zwrot-i-reklamacja/68686277/Procedura-zwrotu.html"
+          type="text_link">Procedura zwrotu</a>
+        <a class="footer__navitem--link" href="/faq/Metody-płatności/" type="text_link">Metody
+          płatności</a>
+        <a class="footer__navitem--link" href="/faq/tabela-rozmiarów/" type="text_link">Rozmiary</a>
+        <a class="footer__navitem--link" href="https://www.zalando.pl/faq/Zwrot-i-reklamacja/68686397/Reklamacja.htm"
+          type="text_link">Reklamacja</a>
+        <a class="footer__navitem--link" href="https://www.zalando.pl/zalando-newsletter/" type="text_link">Zapisz
+          się do newslettera</a>
+      </div>
+    </section>
+    <section class="footer__navigation--section">
+      <h4 class="footer__navigation--title">KARTY UPOMINKOWE I KUPONY</h4>
+      <div class="footer__navitem">
+        <a class="footer__navitem--link" href="/karty-upominkowe/" type="text_link">Kup kartę
+          upominkową</a>
+        <a class="footer__navitem--link" href="/faq/Karty-upominkowe/68687057/Realizacja-karty-upominkowej.htm"
+          type="text_link">Realizacja karty upominkowej</a>
+        <a class="footer__navitem--link" href="/faq/Kupony-rabatowe/68686596/Realizacja-kuponu-rabatowego.htm"
+          type="text_link">Realizacja kuponu rabatowego</a>
+        <a class="footer__navitem--link" href="/faq/Kupony-rabatowe/68686687/Niedzia%C5%82aj%C4%85cy-kupon-rabatowy.htm"
+          type="text_link">Niedziałający kupon rabatowy</a>
+        <a class="footer__navitem--link" href="https://www.zalando.pl/korporacyjne-karty-upominkowe/"
+          type="text_link">Karty Upominkowe Dla Firm</a>
+      </div>
+    </section>
+    <section class="footer__navigation--section">
+      <h4 class="footer__navigation--title">ZALANDO BUSINESS</h4>
+      <div class="footer__navitem">
+        <a class="footer__navitem--link" href="https://corporate.zalando.pl/" type="text_link">Corporate
+          Website</a>
+        <a class="footer__navitem--link" href="https://jobs.zalando.de/en/" type="text_link">Kariera</a>
+        <a class="footer__navitem--link" href="/prasa/" type="text_link">Prasa</a>
+        <a class="footer__navitem--link" href="https://zms.zalando.com/" type="text_link">Zalando
+          Media Solutions</a>
+        <a class="footer__navitem--link" href="/marketing/" type="text_link">Współpraca
+          marketingowa</a>
+        <a class="footer__navitem--link" href="https://www.zalando.pl/leksykon-mody/" type="text_link">Leksykon
+          mody</a>
+      </div>
+    </section>
+    <section class="footer__navigation--section">
+      <h4 class="footer__navigation--title">NASI PARTNERZY LOGISTYCZNI</h4>
+      <div class="footer__navitem">
+        <a class="footer__navitem--link" href="/faq/Wysyłka-i-dostawa/68684590/Nasi-partnerzy-logistyczni.htm"
+          type="icon_link">
+          <img src="src/images/fedex-express.png" alt="FedEx">
+        </a>
+        <a class="ooter-navigation__section--content--link" href="faq/Wysy%C5%82ka-i-dostawa/68684856/Wysy%C5%82ka-ekspresowa.htm"
+          type="icon_link">
+          <img src="src/images/dhl.png" alt="DHLExpress">
+        </a>
+      </div>
+    </section>
+    <section class="footer__navigation--section">
+      <h4 class="footer__navigation--title">METODY PŁATNOŚCI</h4>
+      <div class="footer__navitem">
+        <a class="footer__navitem--link" href="/faq/Metody-płatności/68687621/Płatność-Przelewy-24.htm"
+          type="icon_link">
+          <img src="src/images/transfers.jpg" alt="Przelewy24">
+        </a>
+        <a class="footer__navitem--link" href="/faq/Metody-płatności/68687497/Płatność-kartą-płatniczą.htm"
+          type="icon_link">
+          <img src="src/images/card.jpg" alt="credit card">
+        </a>
+        <a class="footer__navitem--link" href="/faq/Metody-płatności/68687547/Płatność-PayPal.htm"
+          type="icon_link">
+          <img src="src/images/paypal.jpg" alt="PayPal">
+        </a>
+        <a class="footer__navitem--link" href="/faq/Metody-płatności/68687434/Płatność-za-pobraniem.htm"
+          type="icon_link"><img alt="cod.png" src="https://mosaic02.ztat.net/nvg/z-footer-fragment/production/svg-icons/pl-PL/1541157095101/cod.png"></a>
+      </div>
+    </section>
+    <section class="footer__navigation--section">
+      <h4 class="footer__navigation--title">ŁATWE ZAKUPY ONLINE</h4>
+      <div class="footer__navitem">
+        <a class="footer__navitem--link button-small" href="/faq/Wysyłka-i-dostawa/" type="text_link">
+          <img src="src/images/truck.PNG" alt="free shipping">
+          <div>Przesyłka gratis</div>
+        </a>
+        <a class="footer__navitem--link button-small" href="/faq/Zwrot-i-reklamacja/68686277/Procedura-zwrotu.htm"
+          type="text_link">
+          <img src="src/images/return.PNG" alt="free returns">
+          <div>Zwrot gratis</div>
+        </a>
+        <a class="footer__navitem--link button-small" href="/faq/Zwrot-i-reklamacja/68686150/Zwrot.htm"
+          type="text_link">
+          <img src="src/images/calendar.PNG" alt="right for return">
+          <div>100-dniowe prawo zwrotu</div>
+        </a>
+      </div>
+    </section>
+    <section class="footer__navigation--section">
+      <h4 class="footer__navigation--title">SPRAWDZONA USŁUGA</h4>
+      <div class="footer__navitem">
+        <a class="footer__navitem--link" href="http://www.opineo.pl/opinie/zalando-pl" type="text_link">Jakość
+          Usług Opineo</a>
+      </div>
+    </section>
+    <section class="footer__navigation--section"></section>
+  </footer>
+
+</body>
+
+</html>

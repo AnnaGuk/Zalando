@@ -1,0 +1,26 @@
+@mixin body-design {
+  margin: 0;
+  border: 0;
+  background: white;
+  width: $width-standard;
+}
+
+@mixin menu-basic($background) {
+  background: $background;
+  @extend %around-centered;
+  width: $width-standard;
+}
+
+@mixin text-decor {
+  text-decoration: none;
+  color: $color-text;
+}
+
+@mixin image-background($image-source) {
+  background-image: $image-source;
+  width: $width-standard;
+  height: 100%;
+  background-position: top;
+  background-size: cover;
+  position: absolute;
+}

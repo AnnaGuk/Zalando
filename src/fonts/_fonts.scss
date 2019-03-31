@@ -1,0 +1,41 @@
+html,
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+.header__menu--middle {
+  font-size: 0.75rem;
+  .header__menu--middle__nav {
+    font-size: 0.8125rem;
+  }
+}
+
+.header__menu--bottom {
+  font-size: 0.75rem;
+  .menubottom__item {
+    @media only screen and (max-width: 700px) {
+      font-size: 0.8125rem;
+    }
+  }
+}
+
+.sales {
+  .sales__box {
+    font-size: 1.5625rem;
+    @media only screen and (max-width: 700px) {
+      font-size: 1.125rem;
+    }
+  }
+  .sales__link {
+    font-size: 1.125rem;
+  }
+}
+
+.footer__container {
+  font-size: 0.75rem;
+}
+
+.footer__navigation {
+  font-size: 0.875rem;
+}

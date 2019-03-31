@@ -1,0 +1,11 @@
+@import "./variables/variable";
+@import "./mixins/mixins";
+@import "./placeholders/placeholders";
+@import "./fonts/fonts";
+@import "./styles/styles";
+@import "./libraries/libraries";
+
+body {
+  @include body-design;
+  box-sizing: border-box;
+}
