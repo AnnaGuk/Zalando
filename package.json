@@ -12,5 +12,8 @@
   },
   "author": "",
   "license": "ISC",
-  "homepage": "https://github.com/AnnaGuk/Zalando#readme"
+  "homepage": "https://github.com/AnnaGuk/Zalando#readme",
+  "dependencies": {
+    "sass": "^1.49.9"
+  }
 }
