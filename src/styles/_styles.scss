@@ -1,14 +1,22 @@
 .header__menu--top {
   @include menu-basic(rgb(247, 240, 240));
+  padding: 0.5rem 1rem;
+
   @media only screen and (max-width: 700px) {
     display: none;
   }
+
   .header__menu--top__element {
     margin: $margin-main;
     color: $color-menu;
     text-transform: uppercase;
     font-size: 0.625rem;
     cursor: help;
+
+    & > a {
+      text-decoration: none;
+      color: $color-menu;
+    }
   }
 }
 
@@ -23,7 +31,7 @@
     @extend %space-around;
     color: $color-menu;
     width: $width-standard;
-    max-width: 18.75rem;
+    max-width: 18rem;
     text-transform: uppercase;
     @media only screen and (max-width: 700px) {
       display: none;
@@ -42,18 +50,26 @@
     width: $width-standard;
     @extend %space-around;
     max-width: 18.75rem;
+
+    @media only screen and (max-width: 700px) {
+      justify-content: flex-start;
+      padding-left: 1rem;
+    }
   }
 
   .header__menu--middle__nav--side {
     box-sizing: border-box;
     width: $width-standard;
-    max-width: 15.625rem;
+    max-width: 18.75rem;
     @extend %between-centered;
 
     .navside__button {
       @extend %column-centered;
+      @include text-decor;
       .navside__item {
-        @include text-decor;
+        @media only screen and (max-width: 700px) {
+          display: none;
+        }
       }
       .navside__item:hover {
         text-decoration: underline;
@@ -86,6 +102,8 @@
     @include menu-basic(white);
     display: flex;
     max-width: 37.5rem;
+    width: $width-standard;
+    padding-left: 1rem;
     @media only screen and (max-width: 700px) {
       background: white;
       z-index: 10;
@@ -198,6 +216,7 @@
     max-width: 28.125rem;
     position: relative;
     @media only screen and (max-width: 700px) {
+      display: none;
       margin-top: 0.625rem;
     }
     .jackets__title--upper {
@@ -319,7 +338,6 @@
 
 .links__container {
   box-sizing: border-box;
-  width: $width-standard;
   margin: 1rem 5rem;
   @media only screen and (max-width: 700px) {
     margin: 0;

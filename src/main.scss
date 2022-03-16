@@ -5,7 +5,18 @@
 @import "./styles/styles";
 @import "./libraries/libraries";
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
 body {
   @include body-design;
   box-sizing: border-box;
+  min-height: 100vh;
 }
