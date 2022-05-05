@@ -243,16 +243,12 @@
     margin-top: 47rem;
   }
   .slider__slide {
-    overflow-x: auto;
+    overflow: hidden;
     width: $width-standard;
     transform: translate3d(0px, 0px, 0px);
-    scroll-behavior: smooth;
     white-space: nowrap;
     position: relative;
     transition: transform 0.5s ease;
-    .slider__slide::-webkit-scrollbar {
-      display: none;
-    }
     .slider__slide--small {
       display: inline-block;
       padding: 0.5rem;
@@ -264,6 +260,10 @@
       @media only screen and (max-width: 700px) {
         max-height: 12.5rem;
       }
+    }
+    .slider__slide--article {
+      text-decoration: none;
+      color: #1a1a1a;
     }
   }
 
@@ -278,7 +278,7 @@
       height: 3.125rem;
       margin: 0.625rem;
       overflow: hidden;
-      white-space: wrap;
+      border: none;
       cursor: pointer;
       background-color: rgba(255, 255, 255, 0.8);
       border-color: grey;
