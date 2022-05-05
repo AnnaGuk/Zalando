@@ -24,7 +24,7 @@
   margin: $margin-main;
   @include menu-basic(white);
   @media only screen and (max-width: 700px) {
-    margin: 0;
+    margin: 1rem 0 0;
   }
 
   .header__menu--middle__nav {
@@ -89,7 +89,7 @@
 
     @media only screen and (max-width: 700px) {
       background: white;
-      border: 2px solid grey;
+      border: none;
       display: inline;
       position: relative;
       z-index: 10;
@@ -148,7 +148,7 @@
 
   .header__search {
     @extend %aligned-end;
-    margin: $margin-main;
+    margin: 0.625rem 0;
     .header__searchfield {
       border: 0;
       border-bottom: 1px solid $color-text;
@@ -328,7 +328,7 @@
   margin: 3rem auto;
   @media only screen and (max-width: 700px) {
     box-sizing: border-box;
-    margin: 1rem;
+    margin: auto;
     text-align: justify;
   }
   .footer__text {
