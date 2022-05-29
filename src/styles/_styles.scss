@@ -400,6 +400,7 @@
 
 .footer__navigation {
   @include menu-basic(#eceaeb);
+  display: flex;
   flex-flow: row wrap;
   margin: 0 auto;
   @media only screen and (max-width: 700px) {
@@ -407,10 +408,12 @@
   }
   .footer__navigation--section {
     flex-basis: 50%;
+    max-width: 50%;
     position: relative;
     margin: 1rem 0;
     @media only screen and (max-width: 700px) {
       margin: 0;
+      max-width: 100%;
     }
     .footer__navigation--title {
       margin: 1rem 2.2rem;
@@ -451,21 +454,27 @@
     .footer__navitem {
       column-count: 2;
       margin: 0 2.2rem;
-      padding: 0 1.25rem;
       transition: all 0.15s ease-out;
-      display: block;
+      display: flex;
+      flex-wrap: wrap;
       overflow: hidden;
       @media only screen and (max-width: 700px) {
         display: none;
       }
       .footer__navitem--link {
-        display: inline-block;
+        flex-basis: 50%;
+        max-width: 50%;
         padding: 0.3125rem 0;
-        color: #444;
-        text-decoration: none;
+        a {
+          text-decoration: none;
+          color: #444;
+        }
       }
       .footer__navitem--link:hover {
         text-decoration: underline;
+      }
+      .footer__navitem--imglink {
+        padding: 0.3125rem;
       }
       .button-small {
         @extend %content-center;
