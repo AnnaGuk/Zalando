@@ -80,58 +80,70 @@
       </div>
 
       <div class="header__menu--bottom">
-        <button id="hmbg" class="btn__hamburger">
-          <img
-            src="src/images/icons/hamburger.png"
-            alt="Menu"
-            style="width: 35px; height: 35px; padding: 0"
-          />
-        </button>
+        <nav class="header__menu--bottom__nav active">
+          <label for="touch">                
+            <span id="hmbg" class="btn__hamburger">
+              <img
+                src="src/images/icons/hamburger.png"
+                alt="Menu"
+              />
+            </span>
+          </label>
+          <input type="checkbox" id="touch">
 
-        <nav id="mbl" class="header__menu--bottom__nav active">
-          <a
-            class="menubottom__item active"
-            href="https://www.zalando.pl/odziez-dziecieca/"
-            >Odzież</a
-          >
-          <a
-            class="menubottom__item"
-            href="https://www.zalando.pl/obuwie-dzieciece/"
-            >Obuwie</a
-          >
-          <a
-            class="menubottom__item"
-            href="https://www.zalando.pl/sport-dzieci/"
-            >Sport</a
-          >
-          <a
-            class="menubottom__item"
-            href="https://www.zalando.pl/dzieci-akcesoria/"
-            >Akcesoria</a
-          >
-          <a
-            class="menubottom__item"
-            href="https://www.zalando.pl/bielizna-dziecieca/"
-            >Bielizna</a
-          >
-          <a
-            class="menubottom__item"
-            href="https://www.zalando.pl/premium-dzieci/"
-            >Premium</a
-          >
-          <a
-            class="menubottom__item"
-            href="https://www.zalando.pl/marki/dzieci/"
-            >Marki</a
-          >
-          <a
-            class="menubottom__item-diff"
-            id="promo"
-            href="https://www.zalando.pl/dzieci-promocja/"
-            >Promocje</a
-          >
+          <ul class="header__menu--bottom__slide">
+            <li>
+              <a
+                class="menubottom__item active"
+                href="https://www.zalando.pl/odziez-dziecieca/"
+              >Odzież</a>
+            </li> 
+            <li>
+              <a
+                class="menubottom__item"
+                href="https://www.zalando.pl/obuwie-dzieciece/"
+              >Obuwie</a>
+            </li>
+            <li>
+              <a
+              class="menubottom__item"
+              href="https://www.zalando.pl/sport-dzieci/"
+              >Sport</a>
+            </li>
+            <li>
+              <a
+                class="menubottom__item"
+                href="https://www.zalando.pl/dzieci-akcesoria/"
+                >Akcesoria</a>
+            </li>
+            <li>
+              <a
+                class="menubottom__item"
+                href="https://www.zalando.pl/bielizna-dziecieca/"
+              >Bielizna</a>
+            </li>
+            <li>
+              <a
+                class="menubottom__item"
+                href="https://www.zalando.pl/premium-dzieci/"
+                >Premium</a>
+            </li>
+            <li>
+              <a
+                class="menubottom__item"
+                href="https://www.zalando.pl/marki/dzieci/"
+                >Marki</a>
+            </li>
+            <li>
+              <a
+                class="menubottom__item-diff"
+                id="promo"
+                href="https://www.zalando.pl/dzieci-promocja/"
+                >Promocje</a>
+            </li>
+          </ul>
         </nav>
-        <div class="header__search">
+        <div class="header__search" id="search">
           <input
             class="header__searchfield"
             type="search"
